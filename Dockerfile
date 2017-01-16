@@ -53,3 +53,5 @@ RUN curl -O https://getcomposer.org/download/${COMPOSER_VERSION}/composer.phar &
 
 RUN chown www-data:www-data /var/www/html -R
 VOLUME /var/www/html
+
+COPY php.ini /usr/local/etc/php/php.ini
